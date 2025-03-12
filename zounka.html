@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zounka Tech - Software Solutions</title>
+    <link rel="stylesheet" href="zounka.css">
+    <script defer src="zoinka.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Zounka Tech</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Zounka Tech</h1>
+            <p>Innovative Software Solutions for Your Business</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="images/service1.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>We create modern, responsive websites.</p>
+            </div>
+            <div class="service">
+                <img src="images/service2.jpg" alt="Mobile Apps">
+                <h3>Mobile App Development</h3>
+                <p>Custom mobile applications for iOS and Android.</p>
+            </div>
+            <div class="service">
+                <img src="images/service3.jpg" alt="Cloud Solutions">
+                <h3>Cloud Solutions</h3>
+                <p>Scalable cloud-based solutions for businesses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item" onclick="openModal('portfolio1.jpg')">
+                <img src="images/portfolio1.jpg" alt="Project 1">
+                <div class="overlay">Project 1</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal('portfolio2.jpg')">
+                <img src="images/portfolio2.jpg" alt="Project 2">
+                <div class="overlay">Project 2</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal('portfolio3.jpg')">
+                <img src="images/portfolio3.jpg" alt="Project 3">
+                <div class="overlay">Project 3</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Popup -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" class="modal-content">
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Zounka Tech is a leading software engineering company dedicated to delivering high-quality, scalable software solutions. We specialize in web development, mobile applications, and cloud technologies.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Zounka Tech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
